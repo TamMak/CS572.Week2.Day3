@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><p>Welcome to result Page!</p></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+     
+         <h2>Loop inventories</h2>
+		
+		<ul> 
+			
+	    <% items.forEach(function(item) { %>
+	    
+	        <li><%= item.name %></li>
+	        <li><%= item.catagoery %></li>
+	        <li><%= item.address%></li>
+		       
+		    <% }); %>
+		</ul>
+  
+  
+	
+  </body>
+</html>
